@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RestaurantsActivity" />
+        <activity android:name=".CoffeeDessertsActivity"></activity>
     </application>
 
 </manifest>
