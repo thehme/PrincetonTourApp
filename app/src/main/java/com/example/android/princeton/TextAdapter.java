@@ -8,16 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class TextAdapter extends ArrayAdapter<Text> {
+public class TextAdapter extends ArrayAdapter<ItemText> {
     /** background color for list_item **/
     public int mColorResourceId;
 
-    public TextAdapter(Activity context, ArrayList<Text> texts, int backgroundColorResourceId) {
+    public TextAdapter(Activity context, ArrayList<ItemText> texts, int backgroundColorResourceId) {
         super(context, 0, texts);
         mColorResourceId = backgroundColorResourceId;
     }
@@ -33,7 +32,7 @@ public class TextAdapter extends ArrayAdapter<Text> {
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
-        Text currentWord = getItem(position);
+        ItemText currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
@@ -47,16 +46,16 @@ public class TextAdapter extends ArrayAdapter<Text> {
         // set this text on the number TextView
         numberTextView.setText(currentWord.getTown());
 
-        //Find the ImageView in the list_item.xml layout with the ID image
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-        //Find if image provided
-        if (currentWord.hasValidImage()) {
-            iconView.setVisibility(View.VISIBLE);
-            iconView.setImageResource(currentWord.getImageResourceId());
-        } else {
-            //No valid image provided, hide ImageView
-            iconView.setVisibility(View.GONE);
-        }
+//        //Find the ImageView in the list_item.xml layout with the ID image
+//        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
+//        //Find if image provided
+//        if (currentWord.hasValidImage()) {
+//            iconView.setVisibility(View.VISIBLE);
+//            iconView.setImageResource(currentWord.getImageResourceId());
+//        } else {
+//            //No valid image provided, hide ImageView
+//            iconView.setVisibility(View.GONE);
+//        }
 
         View textContainer = listItemView.findViewById(R.id.text_container);
         // determine color to be used in background

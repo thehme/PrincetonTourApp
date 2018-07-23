@@ -25,33 +25,35 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0) {
+//        if (position == 0) {
             return mContext.getString(R.string.category_restaurants);
-        } else if (position == 1) {
-            return mContext.getString(R.string.category_dessert);
-        } else if (position == 2) {
-            return mContext.getString(R.string.category_attractions);
-        } else {
-            return mContext.getString(R.string.category_events);
-        }
+//        }
+//        else if (position == 1) {
+//            return mContext.getString(R.string.category_dessert);
+//        } else if (position == 2) {
+//            return mContext.getString(R.string.category_attractions);
+//        } else {
+//            return mContext.getString(R.string.category_events);
+//        }
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new NumbersFragment();
-        } else if (position == 1){
-            return new FamilyFragment();
-        } else if (position == 2) {
-            return new ColorsFragment();
-        } else {
-            return new PhrasesFragment();
-        }
+//        if (position == 0) {
+            return new RestaurantsFragment();
+//        }
+//        else if (position == 1){
+//            return new FamilyFragment();
+//        } else if (position == 2) {
+//            return new ColorsFragment();
+//        } else {
+//            return new PhrasesFragment();
+//        }
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 1;
     }
 
 }

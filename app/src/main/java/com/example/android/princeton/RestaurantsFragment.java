@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 /**
@@ -26,10 +24,10 @@ public class RestaurantsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.text_list, container, false);
 
-        final ArrayList<Text> restaurants = new ArrayList<Text>();
+        final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new Text("Olives Catering", "Princeton, NJ", R.drawable.olivesenter));
-        restaurants.add(new Text("PJ’s Pancake House West Windsor", "West Windsor", R.drawable.pjswestwindsor));
+        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ"));
+        restaurants.add(new ItemText("PJ’s Pancake House West Windsor", "West Windsor"));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 
@@ -40,7 +38,7 @@ public class RestaurantsFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Text text = restaurants.get(position);
+                ItemText textItem = restaurants.get(position);
             }
         });
         return rootView;
