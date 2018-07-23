@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class TextAdapter extends ArrayAdapter<ItemText> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link current work} object located at this position in the list
         ItemText currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
@@ -46,16 +47,10 @@ public class TextAdapter extends ArrayAdapter<ItemText> {
         // set this text on the number TextView
         numberTextView.setText(currentWord.getTown());
 
-//        //Find the ImageView in the list_item.xml layout with the ID image
-//        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-//        //Find if image provided
-//        if (currentWord.hasValidImage()) {
-//            iconView.setVisibility(View.VISIBLE);
-//            iconView.setImageResource(currentWord.getImageResourceId());
-//        } else {
-//            //No valid image provided, hide ImageView
-//            iconView.setVisibility(View.GONE);
-//        }
+        //Find the ImageView in the list_item.xml layout with the ID image
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_image);
+        iconView.setVisibility(View.VISIBLE);
+        iconView.setImageResource(currentWord.getImageResourceId());
 
         View textContainer = listItemView.findViewById(R.id.text_container);
         // determine color to be used in background
