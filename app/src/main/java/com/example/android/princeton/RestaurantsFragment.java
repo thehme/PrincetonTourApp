@@ -26,8 +26,8 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", R.drawable.olivesenter));
-        restaurants.add(new ItemText("PJ’s Pancake House West Windsor", "West Windsor", R.drawable.pjswestwindsor));
+        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", R.drawable.olives));
+        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", R.drawable.pjsphwestwindsor));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 

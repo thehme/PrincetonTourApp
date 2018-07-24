@@ -11,7 +11,7 @@ public class ItemText {
         mTown = town;
         mImageResourceId = imageResourceId;
     }
-    
+
     public String getName() {
         return mName;
     }
