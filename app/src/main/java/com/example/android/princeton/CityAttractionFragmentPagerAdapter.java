@@ -27,9 +27,8 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
             return mContext.getString(R.string.category_restaurants);
-//        }
-//        else if (position == 1) {
-//            return mContext.getString(R.string.category_dessert);
+        } else if (position == 1) {
+            return mContext.getString(R.string.category_attractions);
 //        } else if (position == 2) {
 //            return mContext.getString(R.string.category_attractions);
         } else {
@@ -41,9 +40,8 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new RestaurantsFragment();
-//        }
-//        else if (position == 1){
-//            return new FamilyFragment();
+        } else if (position == 1){
+            return new AttractionsFragment();
 //        } else if (position == 2) {
 //            return new ColorsFragment();
         } else {
@@ -53,7 +51,7 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
 }
