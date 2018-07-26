@@ -29,8 +29,8 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
             return mContext.getString(R.string.category_restaurants);
         } else if (position == 1) {
             return mContext.getString(R.string.category_attractions);
-//        } else if (position == 2) {
-//            return mContext.getString(R.string.category_attractions);
+        } else if (position == 2) {
+            return mContext.getString(R.string.category_events);
         } else {
             return mContext.getString(R.string.category_dessert);
         }
@@ -42,8 +42,8 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
             return new RestaurantsFragment();
         } else if (position == 1){
             return new AttractionsFragment();
-//        } else if (position == 2) {
-//            return new ColorsFragment();
+        } else if (position == 2) {
+            return new EventsFragment();
         } else {
             return new DessertCoffeeFragment();
         }
@@ -51,7 +51,7 @@ public class CityAttractionFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
 }
