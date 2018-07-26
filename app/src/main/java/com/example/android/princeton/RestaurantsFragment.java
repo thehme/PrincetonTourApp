@@ -37,8 +37,13 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", R.drawable.olives));
-        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", R.drawable.pjsphwestwindsor));
+        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", R.drawable.triumphbrewing));
+        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", R.drawable.olivesenter));
+        restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", R.drawable.hoagie_haven));
+        restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", R.drawable.winberies));
+        restaurants.add(new ItemText("PJ’s Pancake House", "Princeton, NJ", R.drawable.pjsprinceton));
+        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", R.drawable.pjswestwindsor));
+        restaurants.add(new ItemText("Blue Point Grill", "Princeton, NJ", R.drawable.bluepointgrill));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 
@@ -54,81 +59,5 @@ public class RestaurantsFragment extends Fragment {
         });
 
         return rootView;
-    }
-
-    private void setupRecyclerView(RecyclerView recyclerView) {
-        recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
-        recyclerView.setAdapter(new SimpleStringRecyclerViewAdapter(getActivity(),
-                getRandomSublist(Cheeses.sCheeseStrings, 30)));
-    }
-
-    public static class SimpleStringRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleStringRecyclerViewAdapter.ViewHolder> {
-
-        private final TypedValue mTypedValue = new TypedValue();
-        private int mBackground;
-        private List<String> mValues;
-
-        public static class ViewHolder extends RecyclerView.ViewHolder {
-            public String mBoundString;
-
-            public final View mView;
-            public final ImageView mImageView;
-            public final TextView mTextView;
-
-            public ViewHolder(View view) {
-                super(view);
-                mView = view;
-                mImageView = view.findViewById(R.id.list_item_image);
-                mTextView = view.findViewById(android.R.id.text1);
-            }
-
-            @Override
-            public String toString() {
-                return super.toString() + " '" + mTextView.getText();
-            }
-        }
-
-        public SimpleStringRecyclerViewAdapter(Context context, List<String> items) {
-            context.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
-            mBackground = mTypedValue.resourceId;
-            mValues = items;
-        }
-
-        @Override
-        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.list_item, parent, false);
-            view.setBackgroundResource(mBackground);
-            return new ViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
-            holder.mBoundString = mValues.get(position);
-            holder.mTextView.setText(mValues.get(position));
-
-            holder.mView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Context context = v.getContext();
-                    Intent intent = new Intent(context, ItemDetails.class);
-                    intent.putExtra(ItemDetails.EXTRA_NAME, holder.mBoundString);
-
-                    context.startActivity(intent);
-                }
-            });
-
-            RequestOptions options = new RequestOptions();
-            Glide.with(holder.mImageView.getContext())
-                    .load(Cheeses.getRandomCheeseDrawable())
-                    .apply(options.fitCenter())
-                    .into(holder.mImageView);
-        }
-
-        @Override
-        public int getItemCount() {
-            return mValues.size();
-        }
     }
 }
