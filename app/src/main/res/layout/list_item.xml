@@ -21,19 +21,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/name_text_view"
-            tools:text="lutti"/>
+            tools:text="name"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/name_text_view"
             android:id="@+id/town_name_text_view"
-            tools:text="one"/>
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/navigate_next"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:id="@+id/next"/>
+            tools:text="town"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/town_name_text_view"
+            android:id="@+id/hours_text_view"
+            tools:text="web"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours_text_view"
+            android:id="@+id/web_text_view"
+            tools:text="web"/>
     </RelativeLayout>
 </RelativeLayout>
