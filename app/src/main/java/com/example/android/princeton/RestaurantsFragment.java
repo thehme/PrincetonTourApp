@@ -28,14 +28,14 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new ItemText("Agricola", "Princeton, NJ", "https://www.agricolaeatery.com" , R.drawable.triumphbrewing));
-        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "http://www.triumphbrewing.com" , R.drawable.triumphbrewing));
-        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", "https://olivesprinceton.com" , R.drawable.olivesenter));
+        restaurants.add(new ItemText("Agricola", "Princeton, NJ", "https://www.agricolaeatery.com" , R.drawable.agricolapj));
+        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "http://www.triumphbrewing.com" , R.drawable.triumphpj));
+        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", "https://olivesprinceton.com" , R.drawable.olivespj));
         restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", "http://hoagiehaven.com" , R.drawable.hoagie_haven));
         restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", "http://princeton.winberies.com" , R.drawable.winberies));
         restaurants.add(new ItemText("PJ’s Pancake House", "Princeton, NJ", "http://www.pancakes.com" , R.drawable.pjsprinceton));
         restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", "http://www.pancakes.com" , R.drawable.pjswestwindsor));
-        restaurants.add(new ItemText("Asian Bistro", "Princeton Junction, NJ", "https://www.orderstart.com/asianbistronj" , R.drawable.pjsprinceton));
+        restaurants.add(new ItemText("Asian Bistro", "Princeton Junction, NJ", "https://www.orderstart.com/asianbistronj" , R.drawable.asianbistropj));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 

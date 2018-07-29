@@ -25,7 +25,7 @@ public class AttractionsFragment extends Fragment {
 
         final ArrayList<ItemText> attractions = new ArrayList<ItemText>();
 
-        attractions.add(new ItemText("Princeton Battlefield State Park", "Princeton, NJ", R.drawable.triumphbrewing));
+        attractions.add(new ItemText("Princeton Battlefield State Park", "Princeton, NJ", R.drawable.triumphpj));
         attractions.add(new ItemText("Princeton University Chapel", "Hamilton, NJ", R.drawable.olivesenter));
         attractions.add(new ItemText("Princeton University Art Museum", "Princeton, NJ", R.drawable.hoagie_haven));
         attractions.add(new ItemText("Palmer Square", "Princeton, NJ", R.drawable.winberies));

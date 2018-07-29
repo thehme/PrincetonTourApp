@@ -24,7 +24,7 @@ public class EventsFragment extends Fragment {
 
         final ArrayList<ItemText> events = new ArrayList<ItemText>();
 
-        events.add(new ItemText("West Windsor Community Farmer’s Market", "West Windsor, NJ", R.drawable.triumphbrewing));
+        events.add(new ItemText("West Windsor Community Farmer’s Market", "West Windsor, NJ", R.drawable.triumphpj));
         events.add(new ItemText("Communiversity", "Princeton, NJ", R.drawable.olivesenter));
         events.add(new ItemText("Music Fest", "Princeton, NJ", R.drawable.hoagie_haven));
         events.add(new ItemText("Princeton Pi Day", "Princeton, NJ", R.drawable.winberies));

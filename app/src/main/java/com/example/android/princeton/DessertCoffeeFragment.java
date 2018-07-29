@@ -25,7 +25,7 @@ public class DessertCoffeeFragment extends Fragment {
 
         final ArrayList<ItemText> dessertCoffeeShops = new ArrayList<ItemText>();
 
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", R.drawable.triumphbrewing));
+        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", R.drawable.triumphpj));
         dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", R.drawable.olivesenter));
         dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", R.drawable.hoagie_haven));
         dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", R.drawable.winberies));
