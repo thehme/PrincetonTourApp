@@ -25,13 +25,13 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", R.drawable.triumphbrewing));
-        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", R.drawable.olivesenter));
-        restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", R.drawable.hoagie_haven));
-        restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", R.drawable.winberies));
-        restaurants.add(new ItemText("PJ’s Pancake House", "Princeton, NJ", R.drawable.pjsprinceton));
-        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", R.drawable.pjswestwindsor));
-        restaurants.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", R.drawable.pjsprinceton));
+        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "www" , R.drawable.triumphbrewing));
+        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", "www" , R.drawable.olivesenter));
+        restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", "www" , R.drawable.hoagie_haven));
+        restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", "www" , R.drawable.winberies));
+        restaurants.add(new ItemText("PJ’s Pancake House", "Princeton, NJ", "www" , R.drawable.pjsprinceton));
+        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", "www" , R.drawable.pjswestwindsor));
+        restaurants.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", "www" , R.drawable.pjsprinceton));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 

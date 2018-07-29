@@ -34,12 +34,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/town_name_text_view"
-            android:id="@+id/hours_text_view"
-            tools:text="web"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/hours_text_view"
             android:id="@+id/web_text_view"
             tools:text="web"/>
     </RelativeLayout>
