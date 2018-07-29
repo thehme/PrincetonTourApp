@@ -1,7 +1,10 @@
 package com.example.android.princeton;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +29,7 @@ public class RestaurantsFragment extends Fragment {
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
         restaurants.add(new ItemText("Agricola", "Princeton, NJ", "https://www.agricolaeatery.com" , R.drawable.triumphbrewing));
-        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "http://www.triumphbrewing.com/princeton" , R.drawable.triumphbrewing));
+        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "http://www.triumphbrewing.com" , R.drawable.triumphbrewing));
         restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", "https://olivesprinceton.com" , R.drawable.olivesenter));
         restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", "http://hoagiehaven.com" , R.drawable.hoagie_haven));
         restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", "http://princeton.winberies.com" , R.drawable.winberies));
@@ -44,6 +47,10 @@ public class RestaurantsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ItemText textItem = restaurants.get(position);
+                String webAddress = textItem.getWebAddress();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(webAddress));
+                startActivity(intent);
             }
         });
 
