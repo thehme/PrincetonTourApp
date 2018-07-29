@@ -28,6 +28,7 @@ public class EventsFragment extends Fragment {
         events.add(new ItemText("Communiversity", "Princeton, NJ", R.drawable.olivesenter));
         events.add(new ItemText("Music Fest", "Princeton, NJ", R.drawable.hoagie_haven));
         events.add(new ItemText("Princeton Pi Day", "Princeton, NJ", R.drawable.winberies));
+        events.add(new ItemText("WWACF Summer Music", "Princeton, NJ", R.drawable.pjsprinceton));
         events.add(new ItemText("Independence Day Fireworks", "Hamilton, NJ", R.drawable.pjsprinceton));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), events, R.color.colorPrimary);
