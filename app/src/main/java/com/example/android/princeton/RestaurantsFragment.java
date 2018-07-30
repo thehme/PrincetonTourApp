@@ -28,14 +28,14 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<ItemText> restaurants = new ArrayList<ItemText>();
 
-        restaurants.add(new ItemText("Agricola", "Princeton, NJ", "https://www.agricolaeatery.com" , R.drawable.agricolapj));
-        restaurants.add(new ItemText("Triumph Brewery", "Princeton, NJ", "http://www.triumphbrewing.com" , R.drawable.triumphpj));
-        restaurants.add(new ItemText("Olives Catering", "Princeton, NJ", "https://olivesprinceton.com" , R.drawable.olivespj));
-        restaurants.add(new ItemText("Hoagie Haven", "Princeton, NJ", "http://hoagiehaven.com" , R.drawable.hoagie_haven));
-        restaurants.add(new ItemText("Winberie\'s Restaurant & Bar", "Princeton, NJ", "http://princeton.winberies.com" , R.drawable.winberies));
-        restaurants.add(new ItemText("PJ’s Pancake House", "Princeton, NJ", "http://www.pancakes.com" , R.drawable.pjsprinceton));
-        restaurants.add(new ItemText("PJ’s Pancake House", "West Windsor, NJ", "http://www.pancakes.com" , R.drawable.pjswestwindsor));
-        restaurants.add(new ItemText("Asian Bistro", "Princeton Junction, NJ", "https://www.orderstart.com/asianbistronj" , R.drawable.asianbistropj));
+        restaurants.add(new ItemText(this.getString(R.string.agricola_name), this.getString(R.string.princeton_town), this.getString(R.string.agricola_website), R.drawable.agricolapj));
+        restaurants.add(new ItemText(this.getString(R.string.triumph_name), this.getString(R.string.princeton_town), this.getString(R.string.triumph_website), R.drawable.triumphpj));
+        restaurants.add(new ItemText(this.getString(R.string.olives_name), this.getString(R.string.princeton_town), this.getString(R.string.olives_website), R.drawable.olivespj));
+        restaurants.add(new ItemText(this.getString(R.string.hoagie_name), this.getString(R.string.princeton_town), this.getString(R.string.hoagie_website), R.drawable.hoagie_haven));
+        restaurants.add(new ItemText(this.getString(R.string.winberies_name), this.getString(R.string.princeton_town), this.getString(R.string.winberies_website), R.drawable.winberies));
+        restaurants.add(new ItemText(this.getString(R.string.pjs_name), this.getString(R.string.princeton_town), this.getString(R.string.pjs_website), R.drawable.pjsprinceton));
+        restaurants.add(new ItemText(this.getString(R.string.pjs_name), this.getString(R.string.west_windsor_town), this.getString(R.string.pjs_website), R.drawable.pjswestwindsor));
+        restaurants.add(new ItemText(this.getString(R.string.asian_bistro_name), this.getString(R.string.princeton_junction_town), this.getString(R.string.asian_bistro_website), R.drawable.asianbistropj));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), restaurants, R.color.colorPrimary);
 

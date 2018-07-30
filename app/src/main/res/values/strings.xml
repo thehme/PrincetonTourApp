@@ -19,12 +19,14 @@
     <string name="communiversity_website">"http://artscouncilofprinceton.org/communiversity"</string>
     <string name="princeton_pi_name">"Princeton Pi Day"</string>
     <string name="princeton_pi_website">"https://princetontourcompany.com/activities/pi-day"</string>
+    <string name="princeton_plasma">"Princeton Plasma Physics Laboratory"</string>
+    <string name="palmer_square_events_website">"https://www.palmersquare.com/events"</string>
+    <!-- TOWNS -->
     <string name="west_windsor_town">"West Windsor, NJ"</string>
     <string name="princeton_town">"Princeton, NJ"</string>
     <string name="hamilton_town">"Hamilton, NJ"</string>
     <string name="hopewell_town">"Hopewell Township, NJ"</string>
-    <string name="princeton_plasma">"Princeton Plasma Physics Laboratory"</string>
-    <string name="palmer_square_events_website">"https://www.palmersquare.com/events"</string>
+    <string name="princeton_junction_town">"Princeton Junction, NJ"</string>
     <!-- ATTRACTIONS -->
     <string name="princeton_battlefield_name">"Princeton Battlefield State Park"</string>
     <string name="princeton_battlefield_website">"https://www.nj.gov/dep/parksandforests/parks/princeton.html"</string>
@@ -40,4 +42,19 @@
     <string name="billie_johnson_park_website">"http://njtrails.org/trail/mountain-lakes-open-space-area"</string>
     <string name="washington_park_name">"Washington Crossing State Park"</string>
     <string name="washington_park_website">"https://www.state.nj.us/dep/parksandforests/parks/washcros.html"</string>
+    <!-- RESTAURANTS -->
+    <string name="agricola_name">"Agricola"</string>
+    <string name="agricola_website">"https://www.agricolaeatery.com"</string>
+    <string name="triumph_name">"Triumph Brewery"</string>
+    <string name="triumph_website">"http://www.triumphbrewing.com"</string>
+    <string name="olives_name">"Olives Catering"</string>
+    <string name="olives_website">"https://olivesprinceton.com"</string>
+    <string name="hoagie_name">"Hoagie Haven"</string>
+    <string name="hoagie_website">"http://hoagiehaven.com"</string>
+    <string name="winberies_name">"Winberie\'s Restaurant &amp; Bar"</string>
+    <string name="winberies_website">"http://princeton.winberies.com"</string>
+    <string name="pjs_name">"PJ’s Pancake House"</string>
+    <string name="pjs_website">"http://www.pancakes.com"</string>
+    <string name="asian_bistro_name">"Asian Bistro"</string>
+    <string name="asian_bistro_website">"https://www.orderstart.com/asianbistronj"</string>
 </resources>
