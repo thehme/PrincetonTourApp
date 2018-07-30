@@ -30,9 +30,9 @@ public class EventsFragment extends Fragment {
         events.add(new ItemText("Communiversity", "Princeton, NJ", "http://artscouncilofprinceton.org/communiversity", R.drawable.communiversitynj));
         events.add(new ItemText("Music Fest Princeton", "Princeton, NJ", "https://www.palmersquare.com/events", R.drawable.musicfest));
         events.add(new ItemText("Princeton Pi Day", "Princeton, NJ", "https://princetontourcompany.com/activities/pi-day", R.drawable.pidaypj));
-        events.add(new ItemText("WWACF Summer Music", "Princeton, NJ", "https://westwindsorarts.org/events", R.drawable.pjsprinceton));
-        events.add(new ItemText("Independence Day Fireworks", "Hamilton, NJ", "https://www.rider.edu/events/independence-day-fireworks", R.drawable.pjsprinceton));
-        events.add(new ItemText("SCIENCE ON SATURDAY Lecture Series", "Princeton Plasma Physics Laboratory", "https://www.pppl.gov/education/science-education/programs/ronald-e-hatcher-science-saturday-lecture-series", R.drawable.pjsprinceton));
+        events.add(new ItemText("WWACF Summer Music", "Princeton, NJ", "https://westwindsorarts.org/events", R.drawable.wwac));
+        events.add(new ItemText("Independence Day Fireworks", "Hamilton, NJ", "https://www.rider.edu/events/independence-day-fireworks", R.drawable.riderjuly));
+        events.add(new ItemText("SCIENCE ON SATURDAY Lecture Series", "Princeton Plasma Physics Laboratory", "https://www.pppl.gov/education/science-education/programs/ronald-e-hatcher-science-saturday-lecture-series", R.drawable.sciencesat));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), events, R.color.colorPrimary);
 
