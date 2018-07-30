@@ -1,5 +1,7 @@
 package com.example.android.princeton;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -25,13 +27,13 @@ public class DessertCoffeeFragment extends Fragment {
 
         final ArrayList<ItemText> dessertCoffeeShops = new ArrayList<ItemText>();
 
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", R.drawable.halopubp));
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", R.drawable.halopubh));
-        dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", R.drawable.thomassweet));
-        dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", R.drawable.houseofcupcakes));
-        dessertCoffeeShops.add(new ItemText("Small World Coffee", "Princeton, NJ", R.drawable.smallworldcoffee));
-        dessertCoffeeShops.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", R.drawable.kungfutea));
-        dessertCoffeeShops.add(new ItemText("Bent Spoon", "Princeton, NJ", R.drawable.bentspoon));
+        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", "https://www.palmersquare.com/directory/halo-pub", R.drawable.halopubp));
+        dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", "https://www.yelp.com/biz/halo-pub-hamilton-square" , R.drawable.halopubh));
+        dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", "http://www.thomassweet.com", R.drawable.thomassweet));
+        dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", "https://houseofcupcakes.com", R.drawable.houseofcupcakes));
+        dessertCoffeeShops.add(new ItemText("Small World Coffee", "Princeton, NJ", "http://smallworldcoffee.com", R.drawable.smallworldcoffee));
+        dessertCoffeeShops.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", "https://www.yelp.com/biz/kung-fu-tea-princeton-6", R.drawable.kungfutea));
+        dessertCoffeeShops.add(new ItemText("Bent Spoon", "Princeton, NJ", "http://www.thebentspoon.net", R.drawable.bentspoon));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), dessertCoffeeShops, R.color.colorPrimary);
 
@@ -43,6 +45,10 @@ public class DessertCoffeeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ItemText textItem = dessertCoffeeShops.get(position);
+                String webAddress = textItem.getWebAddress();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(webAddress));
+                startActivity(intent);
             }
         });
 
