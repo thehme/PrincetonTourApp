@@ -28,7 +28,7 @@ public class EventsFragment extends Fragment {
 
         events.add(new ItemText(this.getString(R.string.farmers_market_name), this.getString(R.string.west_windsor_town), this.getString(R.string.farmers_market_website), R.drawable.wwfarmers));
         events.add(new ItemText(this.getString(R.string.farmers_market_name), this.getString(R.string.princeton_town), this.getString(R.string.communiversity_website), R.drawable.communiversitynj));
-        events.add(new ItemText(this.getString(R.string.princeton_music_name), this.getString(R.string.princeton_town), this.getString(R.string.palmer_square_website), R.drawable.musicfest));
+        events.add(new ItemText(this.getString(R.string.princeton_music_name), this.getString(R.string.princeton_town), this.getString(R.string.palmer_square_events_website), R.drawable.musicfest));
         events.add(new ItemText(this.getString(R.string.princeton_pi_name), this.getString(R.string.princeton_town), this.getString(R.string.princeton_pi_website), R.drawable.pidaypj));
         events.add(new ItemText(this.getString(R.string.wwacf_name), this.getString(R.string.princeton_town), this.getString(R.string.wwacf_website), R.drawable.wwac));
         events.add(new ItemText(this.getString(R.string.fireworks_name), this.getString(R.string.hamilton_town), this.getString(R.string.fireworks_website), R.drawable.riderjuly));

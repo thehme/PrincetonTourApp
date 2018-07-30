@@ -27,13 +27,13 @@ public class AttractionsFragment extends Fragment {
 
         final ArrayList<ItemText> attractions = new ArrayList<ItemText>();
 
-        attractions.add(new ItemText("Princeton Battlefield State Park", "Princeton, NJ", "https://www.nj.gov/dep/parksandforests/parks/princeton.html", R.drawable.battlefieldpark));
-        attractions.add(new ItemText("Princeton University Chapel", "Hamilton, NJ", "http://religiouslife.princeton.edu/chapel", R.drawable.princetonchapel));
-        attractions.add(new ItemText("Princeton University Art Museum", "Princeton, NJ", "http://artmuseum.princeton.edu", R.drawable.princetonart));
-        attractions.add(new ItemText("Palmer Square", "Princeton, NJ", "https://www.palmersquare.com", R.drawable.palmersquare));
-        attractions.add(new ItemText("Turning Basin Park", "Princeton, NJ", "https://www.princetonnj.gov/location/turning-basin-park", R.drawable.turningbasin));
-        attractions.add(new ItemText("Billie Johnson Mountain Lakes Nature Preserve", "Princeton, NJ", "http://njtrails.org/trail/mountain-lakes-open-space-area", R.drawable.billiejohnsonmountainlakesnaturepreserve));
-        attractions.add(new ItemText("Washington Crossing State Park", "Hopewell Township, NJ", "https://www.state.nj.us/dep/parksandforests/parks/washcros.html", R.drawable.washingtopark));
+        attractions.add(new ItemText(this.getString(R.string.princeton_battlefield_name), this.getString(R.string.princeton_town), this.getString(R.string.princeton_battlefield_website), R.drawable.battlefieldpark));
+        attractions.add(new ItemText(this.getString(R.string.princeton_chapel_name), this.getString(R.string.hamilton_town), this.getString(R.string.princeton_chapel_website), R.drawable.princetonchapel));
+        attractions.add(new ItemText(this.getString(R.string.princeton_museum_name), this.getString(R.string.princeton_town), this.getString(R.string.princeton_museum_website), R.drawable.princetonart));
+        attractions.add(new ItemText(this.getString(R.string.palmer_square_name), this.getString(R.string.princeton_town), this.getString(R.string.palmer_square_website), R.drawable.palmersquare));
+        attractions.add(new ItemText(this.getString(R.string.turning_park_name), this.getString(R.string.princeton_town), this.getString(R.string.turning_park_website), R.drawable.turningbasin));
+        attractions.add(new ItemText(this.getString(R.string.billie_johnson_park_name), this.getString(R.string.princeton_town), this.getString(R.string.billie_johnson_park_website), R.drawable.billiejohnsonmountainlakesnaturepreserve));
+        attractions.add(new ItemText(this.getString(R.string.washington_park_name), this.getString(R.string.hopewell_town), this.getString(R.string.washington_park_website), R.drawable.washingtopark));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), attractions, R.color.colorPrimary);
 

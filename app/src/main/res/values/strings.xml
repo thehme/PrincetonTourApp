@@ -22,6 +22,22 @@
     <string name="west_windsor_town">"West Windsor, NJ"</string>
     <string name="princeton_town">"Princeton, NJ"</string>
     <string name="hamilton_town">"Hamilton, NJ"</string>
+    <string name="hopewell_town">"Hopewell Township, NJ"</string>
     <string name="princeton_plasma">"Princeton Plasma Physics Laboratory"</string>
-    <string name="palmer_square_website">"https://www.palmersquare.com/events"</string>
+    <string name="palmer_square_events_website">"https://www.palmersquare.com/events"</string>
+    <!-- ATTRACTIONS -->
+    <string name="princeton_battlefield_name">"Princeton Battlefield State Park"</string>
+    <string name="princeton_battlefield_website">"https://www.nj.gov/dep/parksandforests/parks/princeton.html"</string>
+    <string name="princeton_chapel_name">"Princeton University Chapel"</string>
+    <string name="princeton_chapel_website">"http://religiouslife.princeton.edu/chapel"</string>
+    <string name="princeton_museum_name">"Princeton University Art Museum"</string>
+    <string name="princeton_museum_website">"http://artmuseum.princeton.edu"</string>
+    <string name="palmer_square_name">"Palmer Square"</string>
+    <string name="palmer_square_website">"https://www.palmersquare.com"</string>
+    <string name="turning_park_name">"Turning Basin Park"</string>
+    <string name="turning_park_website">"https://www.princetonnj.gov/location/turning-basin-park"</string>
+    <string name="billie_johnson_park_name">"Billie Johnson Mountain Lakes Nature Preserve"</string>
+    <string name="billie_johnson_park_website">"http://njtrails.org/trail/mountain-lakes-open-space-area"</string>
+    <string name="washington_park_name">"Washington Crossing State Park"</string>
+    <string name="washington_park_website">"https://www.state.nj.us/dep/parksandforests/parks/washcros.html"</string>
 </resources>
