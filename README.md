@@ -11,6 +11,6 @@ Suggestions for restaurants, sites to visit, events to attend, and coffee/desser
 
 # Example Views
 
-![First Tab](app/src/main/res/drawable-xxhdpi/screenshot_20180729_231218.png)
+![First Tab](app/src/main/res/drawable-hdpi/screenshot_20180729_231218.png)
 
-![Last Tab](app/src/main/res/drawable-xxhdpi/screenshot_20180729-231226.png)
+![Last Tab](app/src/main/res/drawable-hdpi/screenshot_20180729_231226.png)
