@@ -27,13 +27,13 @@ public class DessertCoffeeFragment extends Fragment {
 
         final ArrayList<ItemText> dessertCoffeeShops = new ArrayList<ItemText>();
 
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", "https://www.palmersquare.com/directory/halo-pub", R.drawable.halopubp));
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", "https://www.yelp.com/biz/halo-pub-hamilton-square" , R.drawable.halopubh));
-        dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", "http://www.thomassweet.com", R.drawable.thomassweet));
-        dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", "https://houseofcupcakes.com", R.drawable.houseofcupcakes));
-        dessertCoffeeShops.add(new ItemText("Small World Coffee", "Princeton, NJ", "http://smallworldcoffee.com", R.drawable.smallworldcoffee));
-        dessertCoffeeShops.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", "https://www.yelp.com/biz/kung-fu-tea-princeton-6", R.drawable.kungfutea));
-        dessertCoffeeShops.add(new ItemText("Bent Spoon", "Princeton, NJ", "http://www.thebentspoon.net", R.drawable.bentspoon));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.halo_pub_name), this.getString(R.string.princeton_town), this.getString(R.string.halo_pub_princeton_website), R.drawable.halopubp));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.halo_pub_name), this.getString(R.string.hamilton_town), this.getString(R.string.halo_pub_hamilton_website), R.drawable.halopubh));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.thomas_sweet_name), this.getString(R.string.princeton_town), this.getString(R.string.thomas_sweet_website), R.drawable.thomassweet));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.house_cupcakes_name), this.getString(R.string.princeton_town), this.getString(R.string.house_cupcakes_website), R.drawable.houseofcupcakes));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.small_world_name), this.getString(R.string.princeton_town), this.getString(R.string.small_world_website), R.drawable.smallworldcoffee));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.kung_fu_name), this.getString(R.string.princeton_town), this.getString(R.string.kung_fu_website), R.drawable.kungfutea));
+        dessertCoffeeShops.add(new ItemText(this.getString(R.string.bent_spoon_name), this.getString(R.string.princeton_town), this.getString(R.string.bent_spoon_website), R.drawable.bentspoon));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), dessertCoffeeShops, R.color.colorPrimary);
 

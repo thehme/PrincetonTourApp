@@ -57,4 +57,18 @@
     <string name="pjs_website">"http://www.pancakes.com"</string>
     <string name="asian_bistro_name">"Asian Bistro"</string>
     <string name="asian_bistro_website">"https://www.orderstart.com/asianbistronj"</string>
+    <!-- DESSERT & COFFEE -->
+    <string name="halo_pub_name">"Halo Pub"</string>
+    <string name="halo_pub_princeton_website">"https://www.palmersquare.com/directory/halo-pub"</string>
+    <string name="halo_pub_hamilton_website">"https://www.yelp.com/biz/halo-pub-hamilton-square"</string>
+    <string name="thomas_sweet_name">"Thomas Sweet"</string>
+    <string name="thomas_sweet_website">"http://www.thomassweet.com"</string>
+    <string name="house_cupcakes_name">"House of Cupcakes"</string>
+    <string name="house_cupcakes_website">"https://houseofcupcakes.com"</string>
+    <string name="small_world_name">"Small World Coffee"</string>
+    <string name="small_world_website">"http://smallworldcoffee.com"</string>
+    <string name="kung_fu_name">"Kung Fu Tea &amp; Noodle House"</string>
+    <string name="kung_fu_website">"https://www.yelp.com/biz/kung-fu-tea-princeton-6"</string>
+    <string name="bent_spoon_name">"Bent Spoon"</string>
+    <string name="bent_spoon_website">"http://www.thebentspoon.net"</string>
 </resources>
