@@ -10,11 +10,6 @@ Suggestions for restaurants, sites to visit, events to attend, and coffee/desser
 - An image included for each and event list item
 
 # Example Views
-/Users/brenda/code/AndroidStudioProjects/Princeton/app/src/main/res/drawable-xxhdpi/screenshot_20180729_231218.png
-/Users/brenda/code/AndroidStudioProjects/Princeton/app/src/main/res/drawable-mdpi/screenshot_20180729_231218.png
-/Users/brenda/code/AndroidStudioProjects/Princeton/app/src/main/res/drawable-xhdpi/screenshot_20180729_231218.png
-/Users/brenda/code/AndroidStudioProjects/Princeton/app/src/main/res/drawable-xxxhdpi/screenshot_20180729_231218.png
-/Users/brenda/code/AndroidStudioProjects/Princeton/app/src/main/res/drawable-hdpi/screenshot_20180729_231218.png
 
 ![First Tab](app/src/main/res/drawable-xxhdpi/screenshot_20180729_231218.png)
 
