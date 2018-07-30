@@ -4,4 +4,24 @@
     <string name="category_dessert">Coffee</string>
     <string name="category_attractions">Sites</string>
     <string name="category_events">Events</string>
+    <!-- EVENTS -->
+    <string name="farmers_market_name">"Community Farmer’s Market"</string>
+    <string name="farmers_market_website">"http://www.westwindsorfarmersmarket.org"</string>
+    <string name="princeton_music_name">"Music Fest Princeton"</string>
+    <string name="princeton_music_website">"https://princetontourcompany.com/activities/pi-day"</string>
+    <string name="wwacf_name">"WWACF Summer Music"</string>
+    <string name="wwacf_website">"https://westwindsorarts.org/events"</string>
+    <string name="fireworks_name">"Independence Day Fireworks"</string>
+    <string name="fireworks_website">"https://www.rider.edu/events/independence-day-fireworks"</string>
+    <string name="science_sat_name">"SCIENCE ON SATURDAY Lecture Series"</string>
+    <string name="science_sat_website">"https://www.pppl.gov/education/science-education/programs/ronald-e-hatcher-science-saturday-lecture-series"</string>
+    <string name="communiversity_name">"Communiversity"</string>
+    <string name="communiversity_website">"http://artscouncilofprinceton.org/communiversity"</string>
+    <string name="princeton_pi_name">"Princeton Pi Day"</string>
+    <string name="princeton_pi_website">"https://princetontourcompany.com/activities/pi-day"</string>
+    <string name="west_windsor_town">"West Windsor, NJ"</string>
+    <string name="princeton_town">"Princeton, NJ"</string>
+    <string name="hamilton_town">"Hamilton, NJ"</string>
+    <string name="princeton_plasma">"Princeton Plasma Physics Laboratory"</string>
+    <string name="palmer_square_website">"https://www.palmersquare.com/events"</string>
 </resources>

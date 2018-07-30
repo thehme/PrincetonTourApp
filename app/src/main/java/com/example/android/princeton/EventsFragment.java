@@ -26,13 +26,13 @@ public class EventsFragment extends Fragment {
 
         final ArrayList<ItemText> events = new ArrayList<ItemText>();
 
-        events.add(new ItemText("Community Farmer’s Market", "West Windsor, NJ", "http://www.westwindsorfarmersmarket.org", R.drawable.wwfarmers));
-        events.add(new ItemText("Communiversity", "Princeton, NJ", "http://artscouncilofprinceton.org/communiversity", R.drawable.communiversitynj));
-        events.add(new ItemText("Music Fest Princeton", "Princeton, NJ", "https://www.palmersquare.com/events", R.drawable.musicfest));
-        events.add(new ItemText("Princeton Pi Day", "Princeton, NJ", "https://princetontourcompany.com/activities/pi-day", R.drawable.pidaypj));
-        events.add(new ItemText("WWACF Summer Music", "Princeton, NJ", "https://westwindsorarts.org/events", R.drawable.wwac));
-        events.add(new ItemText("Independence Day Fireworks", "Hamilton, NJ", "https://www.rider.edu/events/independence-day-fireworks", R.drawable.riderjuly));
-        events.add(new ItemText("SCIENCE ON SATURDAY Lecture Series", "Princeton Plasma Physics Laboratory", "https://www.pppl.gov/education/science-education/programs/ronald-e-hatcher-science-saturday-lecture-series", R.drawable.sciencesat));
+        events.add(new ItemText(this.getString(R.string.farmers_market_name), this.getString(R.string.west_windsor_town), this.getString(R.string.farmers_market_website), R.drawable.wwfarmers));
+        events.add(new ItemText(this.getString(R.string.farmers_market_name), this.getString(R.string.princeton_town), this.getString(R.string.communiversity_website), R.drawable.communiversitynj));
+        events.add(new ItemText(this.getString(R.string.princeton_music_name), this.getString(R.string.princeton_town), this.getString(R.string.palmer_square_website), R.drawable.musicfest));
+        events.add(new ItemText(this.getString(R.string.princeton_pi_name), this.getString(R.string.princeton_town), this.getString(R.string.princeton_pi_website), R.drawable.pidaypj));
+        events.add(new ItemText(this.getString(R.string.wwacf_name), this.getString(R.string.princeton_town), this.getString(R.string.wwacf_website), R.drawable.wwac));
+        events.add(new ItemText(this.getString(R.string.fireworks_name), this.getString(R.string.hamilton_town), this.getString(R.string.fireworks_website), R.drawable.riderjuly));
+        events.add(new ItemText(this.getString(R.string.science_sat_name), this.getString(R.string.princeton_plasma), this.getString(R.string.science_sat_website), R.drawable.sciencesat));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), events, R.color.colorPrimary);
 
