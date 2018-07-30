@@ -25,13 +25,13 @@ public class DessertCoffeeFragment extends Fragment {
 
         final ArrayList<ItemText> dessertCoffeeShops = new ArrayList<ItemText>();
 
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", R.drawable.triumphpj));
-        dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", R.drawable.olivespj));
-        dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", R.drawable.hoagie_haven));
-        dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", R.drawable.winberies));
-        dessertCoffeeShops.add(new ItemText("Small World Coffee", "Princeton, NJ", R.drawable.pjsprinceton));
-        dessertCoffeeShops.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", R.drawable.pjsprinceton));
-        dessertCoffeeShops.add(new ItemText("Bent Spoon", "Princeton, NJ", R.drawable.pjsprinceton));
+        dessertCoffeeShops.add(new ItemText("Halo Pub", "Princeton, NJ", R.drawable.halopubp));
+        dessertCoffeeShops.add(new ItemText("Halo Pub", "Hamilton, NJ", R.drawable.halopubh));
+        dessertCoffeeShops.add(new ItemText("Thomas Sweet", "Princeton, NJ", R.drawable.thomassweet));
+        dessertCoffeeShops.add(new ItemText("House of Cupcakes", "Princeton, NJ", R.drawable.houseofcupcakes));
+        dessertCoffeeShops.add(new ItemText("Small World Coffee", "Princeton, NJ", R.drawable.smallworldcoffee));
+        dessertCoffeeShops.add(new ItemText("Kung Fu Tea & Noodle House", "Princeton, NJ", R.drawable.kungfutea));
+        dessertCoffeeShops.add(new ItemText("Bent Spoon", "Princeton, NJ", R.drawable.bentspoon));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), dessertCoffeeShops, R.color.colorPrimary);
 
