@@ -1,5 +1,7 @@
 package com.example.android.princeton;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -25,13 +27,13 @@ public class AttractionsFragment extends Fragment {
 
         final ArrayList<ItemText> attractions = new ArrayList<ItemText>();
 
-        attractions.add(new ItemText("Princeton Battlefield State Park", "Princeton, NJ", R.drawable.triumphpj));
-        attractions.add(new ItemText("Princeton University Chapel", "Hamilton, NJ", R.drawable.olivespj));
-        attractions.add(new ItemText("Princeton University Art Museum", "Princeton, NJ", R.drawable.hoagie_haven));
-        attractions.add(new ItemText("Palmer Square", "Princeton, NJ", R.drawable.winberies));
-        attractions.add(new ItemText("Turning Basin Park", "Princeton, NJ", R.drawable.pjsprinceton));
-        attractions.add(new ItemText("Billie Johnson Mountain Lakes Nature Preserve", "Princeton, NJ", R.drawable.pjsprinceton));
-        attractions.add(new ItemText("Washington Crossing State Park", "Hopewell Township, NJ", R.drawable.pjsprinceton));
+        attractions.add(new ItemText("Princeton Battlefield State Park", "Princeton, NJ", "https://www.nj.gov/dep/parksandforests/parks/princeton.html", R.drawable.battlefieldpark));
+        attractions.add(new ItemText("Princeton University Chapel", "Hamilton, NJ", "http://religiouslife.princeton.edu/chapel", R.drawable.princetonchapel));
+        attractions.add(new ItemText("Princeton University Art Museum", "Princeton, NJ", "http://artmuseum.princeton.edu", R.drawable.princetonart));
+        attractions.add(new ItemText("Palmer Square", "Princeton, NJ", "https://www.palmersquare.com", R.drawable.palmersquare));
+        attractions.add(new ItemText("Turning Basin Park", "Princeton, NJ", "https://www.princetonnj.gov/location/turning-basin-park", R.drawable.turningbasin));
+        attractions.add(new ItemText("Billie Johnson Mountain Lakes Nature Preserve", "Princeton, NJ", "http://njtrails.org/trail/mountain-lakes-open-space-area", R.drawable.billiejohnsonmountainlakesnaturepreserve));
+        attractions.add(new ItemText("Washington Crossing State Park", "Hopewell Township, NJ", "https://www.state.nj.us/dep/parksandforests/parks/washcros.html", R.drawable.washingtopark));
 
         TextAdapter itemsAdapter = new TextAdapter(getActivity(), attractions, R.color.colorPrimary);
 
@@ -43,6 +45,10 @@ public class AttractionsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ItemText textItem = attractions.get(position);
+                String webAddress = textItem.getWebAddress();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(webAddress));
+                startActivity(intent);
             }
         });
 
